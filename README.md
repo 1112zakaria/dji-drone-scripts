@@ -1,12 +1,22 @@
 # DJI Drone Scripts
 
-Read below for instructions.
+Read below for instructions. Tested on Windows.
+
+Setup:
+1. Clone repository
+2. Setup and activate Python virtualenv
+
 
 ## Requirements
 - Python 3. Version isn't too important for now. I have 3.10.5 installed.
 
 ## Clone repository
 
+```
+$ git clone git@github.com:1112zakaria/dji-drone-scripts.git
+$ cd dji-drone-scripts
+$ git submodule update --init --recursive
+```
 
 ## Setup and activate Python virtualenv
 
@@ -14,4 +24,10 @@ Read below for instructions.
 $ python -m venv .venv
 $ source .venv/Scripts/activate
 ```
+
+## References
+How to Calibrate Gimbal on DJI Mavic Air 2 - ifixit
+
+https://www.ifixit.com/Guide/How+to+Calibrate+Gimbal+on+DJI+Mavic+Air+2/153750
+
 
