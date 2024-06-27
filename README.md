@@ -25,6 +25,10 @@ $ python -m venv .venv
 $ source .venv/Scripts/activate
 ```
 
+## Find your product code
+
+Refer to [PRODUCT_CODE_MAPPING.md](PRODUCT_CODE_MAPPING.md) for your DJI device's product code
+
 ## References
 How to Calibrate Gimbal on DJI Mavic Air 2 - ifixit
 
