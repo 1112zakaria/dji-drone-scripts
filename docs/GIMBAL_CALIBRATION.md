@@ -14,3 +14,16 @@ Watch this video: https://youtu.be/mu03HWXplM4
 4. In [.env](../.env), set the DJI_PRODUCT_CODE to the DJI device product code found in Step 3. Set DJI_DEVICE_PORT to the value found in Step 2.
 
 ![alt text](images/dotenv.png)
+5. Run [scripts/calibrate.py](../scripts/calibrate.py) to run JointCoarse and LinearHall calibration using the environment variables defined in Step 4
+
+```
+$ cd scripts
+$ python calibrate.py
+```
+
+An alternative option is to run the comm_og_service_tool.py script yourself, as shown in the video.
+```
+$ cd dji-firmware-tools
+$ python comm_og_service_tool.py --port <DJI_DEVICE_PORT> <DJI_PRODUCT_CODE> GimbalCalib JointCoarse
+$ python comm_og_service_tool.py --port <DJI_DEVICE_PORT> <DJI_PRODUCT_CODE> GimbalCalib LinearHall
+```
