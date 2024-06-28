@@ -12,6 +12,8 @@ To calibrate your DJI device's gimbal, complete setup steps and follow instructi
 
 ## Requirements
 - Python 3. Version isn't too important for now. I have 3.10.5 installed.
+- pySerial
+- python-dotenv
 
 ## Clone repository and submodules
 
