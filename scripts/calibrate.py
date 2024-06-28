@@ -18,7 +18,7 @@ def validate_env(variables: dict) -> bool:
 
 def run_calibration(variables: dict) -> None:
     product_code, device_port = variables['DJI_PRODUCT_CODE'], variables['DJI_DEVICE_PORT']
-    os.system(f"./calibrate.sh {product_code} {device_port}")
+    os.system(f"sh calibrate.sh {device_port} {product_code}")
 
 if __name__ == "__main__":
     env_variables = {
@@ -28,4 +28,3 @@ if __name__ == "__main__":
 
     validate_env(env_variables)
     run_calibration(env_variables)
-    
