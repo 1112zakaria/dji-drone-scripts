@@ -1,7 +1,7 @@
 
 Refer to the below enum for product code mappings.
 
-source: [dji-firmware-tools/comm_og_service_tool.py](dji-firmware-tools\comm_og_service_tool.py)
+source: [dji-firmware-tools/comm_og_service_tool.py](../dji-firmware-tools/comm_og_service_tool.py)
 
 ```
 class PRODUCT_CODE(DecoratedEnum):
